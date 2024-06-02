@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/9537/9537813.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../../css/home/home.css" />
+    <link rel="stylesheet" href="../../css/style.css">
+    <title>Admin || EquiTrain</title>
+</head>
+<body>
+
+    <div class="admin">
+        <aside class="admin-aside">
+            <div class="admin-info">
+                <div class="admin-img">
+                    <img src="../../public/about-our-vision-img2.webp" alt="admin">
+                </div>
+                <h2>Admin</h2>
+
+                <a href="../home/profile.html" class="visit" style="width: 80%; margin-bottom: 10px;">View Profile</a>
+
+            </div>
+
+            <nav class="admin-nav">
+                <ul>
+                    <li style="margin-top: 40px;"><a href="home.html" class="not-this"><i class="fa-solid fa-house"></i>Home</a></li>
+                    <li><a href="users.html" class="not-this"><i class="fa-solid fa-user"></i>Users</a></li>
+                    <li><a href="workers.html" class="not-this"><i class="fa-solid fa-person-chalkboard"></i>Workers</a></li>
+                    <li><a href="horses.html" class="not-this"><i class="fa-solid fa-horse-head"></i>Horses</a></li>
+                    <li><button href="" class="not-this logout"><i class="fa-solid fa-right-from-bracket"></i>Logout</button></li>
+                </ul>
+            </nav>
+        </aside>
+        <div class="category-aside">
+            <h1 class="admin-title"></h1>
+            <p>Manage users, trainers, and horses efficiently from your Admin Dashboard. Your control panel <br> for overseeing all activities and ensuring smooth operations.</p>
+            <div class="cards">
+                <div class="card">
+                    <i class="fa-solid fa-user"></i>
+                    <h3 class="">Home</h3>
+                    <p>Overview, statistics, and dashboard access.</p>
+                    <a class="blue-btn" href="home.html">View</a>
+                    
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-user"></i>
+                    <h3 class="">Users</h3>
+                    <p>Administer and update <br>user accounts.</p>
+                    <a class="blue-btn" href="users.html">View</a>
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-person-chalkboard"></i>
+                    <h3 class="">Workers</h3>
+                    <p>Manage trainer profiles <br>and details.</p>
+                    <a class="blue-btn" href="workers.html">View</a>
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-horse-head"></i>
+                    <h3 class="">Horses</h3>
+                    <p>Oversee horse records <br> and information.</p>
+                    <a class="blue-btn" href="horses.html">View</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../java script/admin/admin.js"></script>
+    <script>
+        const adminTitle = document.querySelector(".admin-title");
+        const title = userData.name;
+        adminTitle.innerHTML = `Hello ${title}`
+    </script>
+</body>
+</html>

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/9537/9537813.png" type="image/x-icon">
+    <link rel="stylesheet" href="../../css/home/home.css" />
+    <link rel="stylesheet" href="../../css/style.css">
+    <title>Users || EquiTrain</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+
+            <div class="header-content">
+                <div class="logo">
+                    <h2>
+                        <a href="admin.html">
+                            EquiTrain
+                        </a>
+                    </h2>
+                </div>
+
+                <nav>
+                    <ul>
+                        <div class="profile-img"><a href="../home/profile.html"></a></div>
+                        <li><button class="logout start-btn">Logout</button></li>
+                    </ul>
+                </nav>
+
+                
+            </div>
+        </div>
+    </header>
+
+    <section class="search pd-y" >
+        <div class="container">
+            <div class="wrapper">
+                <h2>Add user</h2>
+                <form class="add-user-form" action="#">
+                    <div class="input-box1" style="width: 50%;">
+                        <input type="text" class="user-name" id="search" placeholder="Enter user Name" required> <br>
+                        <input type="email" class="user-email" id="search" placeholder="Enter user Email" style="margin: 15px 0;" required> <br>
+                        <input type="tel" class="user-phoneNumber" id="search" placeholder="Enter user Phone Number" style="margin: 0 0 15px 0;" pattern="(06|05|07)[0-9]{8}">
+                        <input type="number" class="user-age" id="search" placeholder="Enter user Age" required>
+                        <select class="user-type" id="user-type search" style="margin: 15px 0; width: 40%;" required>
+                            <option value="" disabled selected style="display: none">have horses?</option>
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                        </select>
+                        
+                    </div>
+                    <br>
+                    <div class="input-box1 button" style="width: 10%; margin-top: 35px;">
+                        <input type="Submit" value="Add user">
+                    </div>
+                    <div class="error-message"></div>
+    
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="search" style="padding-bottom: 30px;">
+        <div class="container">
+            <div class="wrapper">
+                <h2>Search for user</h2>
+                <form class="search-form" action="#">
+                    <div class="input-box1" style="width: 50%;">
+                        <select class="search-type" id="search-type" style="margin: 15px 0; width: 40%;" required>
+                            <option value="" disabled selected style="display: none">Search Type</option>
+                            <option value="Uid">UID</option>
+                            <option value="Name">Name</option>
+                        </select>
+                    </div>
+                    <div class="input-box1" style="width: 50%; margin-top: 25px;">
+                        <input type="text" id="search-input" placeholder="Enter user Name / UID" required>
+                    </div>
+                    <div class="input-box1 button" style="width: 10%;">
+                        <input type="Submit" value="Search">
+                    </div>
+                </form>
+            </div>
+            <div class="user-info" style="display: none;">
+                <div class="user-info-img">
+                    <img src="" alt="User Photo" id="user-photo">
+                </div>
+                <div class="user-info-infos">
+                    <p id="user-name"></p>
+                    <a href="" class="visit"> Visit full profile</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="all-users">
+        <div class="container">
+            <div class="wrapper">
+                <h2>All users</h2>
+                <p>Click on a letter for a quick access</p>
+                <div class="alphabets">
+                    <span class="alphabet a"><a href="#a">A</a></span>
+                    <span class="alphabet b"><a href="#b">B</a></span>
+                    <span class="alphabet c"><a href="#c">C</a></span>
+                    <span class="alphabet d"><a href="#d">D</a></span>
+                    <span class="alphabet e"><a href="#e">E</a></span>
+                    <span class="alphabet f"><a href="#f">F</a></span>
+                    <span class="alphabet g"><a href="#g">G</a></span>
+                    <span class="alphabet h"><a href="#h">H</a></span>
+                    <span class="alphabet i"><a href="#i">I</a></span>
+                    <span class="alphabet j"><a href="#j">J</a></span>
+                    <span class="alphabet k"><a href="#k">K</a></span>
+                    <span class="alphabet l"><a href="#l">L</a></span>
+                    <span class="alphabet m"><a href="#m">M</a></span>
+                    <span class="alphabet n"><a href="#n">N</a></span>
+                    <span class="alphabet o"><a href="#o">O</a></span>
+                    <span class="alphabet p"><a href="#p">P</a></span><br>
+                    <span class="alphabet q"><a href="#q">Q</a></span>
+                    <span class="alphabet r"><a href="#r">R</a></span>
+                    <span class="alphabet s"><a href="#s">S</a></span>
+                    <span class="alphabet t"><a href="#t">T</a></span>
+                    <span class="alphabet u"><a href="#u">U</a></span>
+                    <span class="alphabet v"><a href="#v">V</a></span>
+                    <span class="alphabet w"><a href="#w">W</a></span>
+                    <span class="alphabet x"><a href="#x">X</a></span>
+                    <span class="alphabet y"><a href="#y">Y</a></span>
+                    <span class="alphabet z"><a href="#z">Z</a></span>
+                </div>
+
+
+                <div class="alphabet-section" id="a">
+                    <div class="alpha">A</div>
+                </div>
+                <div class="alphabet-section" id="b">
+                    <div class="alpha">B</div>
+                </div>
+                <div class="alphabet-section" id="c">
+                    <div class="alpha">c</div>
+                </div>
+                <div class="alphabet-section" id="d">
+                    <div class="alpha">D</div>
+                </div>
+                <div class="alphabet-section" id="e">
+                    <div class="alpha">E</div>
+                </div>
+                <div class="alphabet-section" id="f">
+                    <div class="alpha">F</div>
+                </div>
+                <div class="alphabet-section" id="g">
+                    <div class="alpha">G</div>
+                </div>
+                <div class="alphabet-section" id="h">
+                    <div class="alpha">H</div>
+                </div>
+                <div class="alphabet-section" id="i">
+                    <div class="alpha">I</div>
+                </div>
+                <div class="alphabet-section" id="j">
+                    <div class="alpha">J</div>
+                </div>
+                <div class="alphabet-section" id="k">
+                    <div class="alpha">K</div>
+                </div>
+                <div class="alphabet-section" id="l">
+                    <div class="alpha">L</div>
+                </div>
+                <div class="alphabet-section" id="m">
+                    <div class="alpha">M</div>
+                </div>
+                <div class="alphabet-section" id="n">
+                    <div class="alpha">N</div>
+                </div>
+                <div class="alphabet-section" id="o">
+                    <div class="alpha">O</div>
+                </div>
+                <div class="alphabet-section" id="p">
+                    <div class="alpha">P</div>
+                </div>
+                <div class="alphabet-section" id="q">
+                    <div class="alpha">Q</div>
+                </div>
+                <div class="alphabet-section" id="r">
+                    <div class="alpha">R</div>
+                </div>
+                <div class="alphabet-section" id="s">
+                    <div class="alpha">S</div>
+                </div>
+                <div class="alphabet-section" id="t">
+                    <div class="alpha">T</div>
+                </div>
+                <div class="alphabet-section" id="u">
+                    <div class="alpha">U</div>
+                </div>
+                <div class="alphabet-section" id="v">
+                    <div class="alpha">V</div>
+                </div>
+                <div class="alphabet-section" id="w">
+                    <div class="alpha">W</div>
+                </div>
+                <div class="alphabet-section" id="x">
+                    <div class="alpha">X</div>
+                </div>
+                <div class="alphabet-section" id="y">
+                    <div class="alpha">Y</div>
+                </div>
+                <div class="alphabet-section" id="z">
+                    <div class="alpha">Z</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="pd-y">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-item">
+                    <h2 class="footer-title">EquiTrain</h2>
+                    <ul>
+                        <li><a href="#"><i class='bx bxl-facebook-circle' style="color: #212121; transition: color 0.5s;" onmouseover="this.style.color='#1877F2'" onmouseout="this.style.color='#212121'"></i></a></li>
+                        <li><a href="#"><i class='bx bxl-twitter' style="color: #212121; transition: color 0.5s;" onmouseover="this.style.color='#1DA1F2'" onmouseout="this.style.color='#212121'"></i></a></li>
+                        <li><a href="#"><i class='bx bxl-youtube' style="color: #212121; transition: color 0.5s;" onmouseover="this.style.color=' #FF0000'" onmouseout="this.style.color='#212121'"></i></a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-item">
+                    <h6 class="footer-item-title">Services</h6>
+                    <p class="footer-item-links"><a href="#">How it works</a></p>
+                    <p class="footer-item-links"><a href="#">Web Development</a></p>
+                    <p class="footer-item-links"><a href="#">Work & Portfolio</a></p>
+                    <p class="footer-item-links"><a href="#">SEO Backlinks</a></p>
+                    <p class="footer-item-links"><a href="#">SMM production</a></p>
+                    <p class="footer-item-links"><a href="#">Collaboration</a></p>
+                </div>
+
+                <div class="footer-item">
+                    <h6 class="footer-item-title">About</h6>
+                    <p class="footer-item-links"><a href="#">Our mission</a></p>
+                    <p class="footer-item-links"><a href="#">Our story</a></p>
+                    <p class="footer-item-links"><a href="#">Team Members</a></p>
+                    <p class="footer-item-links"><a href="#">Plan & Pricing</a></p>
+                    <p class="footer-item-links"><a href="#">Career</a></p>
+                    <p class="footer-item-links"><a href="#">Live Chat</a></p>
+                </div>
+
+                <div class="footer-item">
+                    <h6 class="footer-item-title">We accept all major credit cards for fast and easy payment.</h6>
+                    <p class="footer-item-links">hello@EquiTrain-team.com</p>
+                    <p class="footer-item-links" style="margin: 10px 0;">25 Rue boni ,Annaba.</p>
+                    <p class="footer-item-links">+213-795-24-13-82.</p>
+                    <img src="../../public/cards.webp" alt="cards" style="display: block; margin-top: 10px;">
+                </div>
+            </div>
+        </div>
+    </footer> <!-- Footer -->
+
+    <a href="reservation.html" class="reserve-science-icon"><i class="bx bx-plus"></i></a>
+    <script src="../../java script/admin/admin.js"></script>
+    <script type="module" src="../../java script/admin/users.js"></script>
+</body>
+</html>
+

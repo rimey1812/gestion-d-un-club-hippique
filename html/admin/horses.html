@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/9537/9537813.png" type="image/x-icon">
+    <link rel="stylesheet" href="../../css/home/home.css" />
+    <link rel="stylesheet" href="../../css/style.css">
+    <title>Horses || EquiTrain</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+
+            <div class="header-content">
+                <div class="logo">
+                    <h2>
+                        <a href="admin.html">
+                            EquiTrain
+                        </a>
+                    </h2>
+                </div>
+
+                <nav>
+                    <ul>
+                        <div class="profile-img"><a href="../home/profile.html"></a></div>
+                        <li><button class="logout start-btn">Logout</button></li>
+                    </ul>
+                </nav>
+
+                
+            </div>
+        </div>
+    </header>
+
+    <section class="search pd-y">
+        <div class="container">
+            <div class="wrapper">
+                <h2>Add Horse</h2>
+                <form class="add-horse-form" action="#">
+                    <div class="input-box1" style="width: 50%;">
+                        <input type="text" class="horse-name" id="horse-name" placeholder="Enter horse Name" required> <br>
+                        <input type="number" class="horse-age" id="horse-age" placeholder="Enter horse Age" style="margin: 15px 0;" required>
+                        <input type="text" class="horse-breed" id="horse-breed" placeholder="Enter horse Breed" required>
+                        <label for="input-file" class="changePhotoProfile" style="width: 580px; padding: 10px 0;">Enter horse photo</label>
+                        <input type="file" accept="image/jpeg, image/png, image/jpg" class="" id="input-file" style="display: none;">
+                        <select class="horse-type" id="horse-type" style="margin: 15px 0; width: 40%;" required>
+                            <option value="" disabled selected style="display: none">have owner?</option>
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                        </select>
+                        <input type="text" class="horse-owner-uid" id="horse-owner-uid" placeholder="Enter Uid of the owner" style="display: none;">
+                    </div>
+                    <br>
+                    <div class="input-box1 button" style="width: 10%; margin-top: 35px;">
+                        <input type="submit" value="Add Horse">
+                    </div>
+                    <div class="error-message"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+
+    <section class="about-horses">
+        <div class="container">
+            <div class="wrapper">
+                <h2>About Your Horses</h2>
+                <p>felknkjbv knvsfknvlk lgvnsfknbl lvnsm</p>
+                <form action="">
+                    <div class="input-box1" style="width: 30%;">
+                        <input type="text" class="hay-qty" placeholder="Add Hay Quantity">
+                        <input type="text" class="oats-qty" placeholder="Add Oats Quantity" style="margin: 15px 0;">
+                        <input type="text" class="water-qty" placeholder="Add Water Quantity">
+                    </div>  <br>
+                    <div class="input-box1 button" style="width: 14%; margin-top: 35px;">
+                        <input type="submit" value="Add Quantities">
+                    </div>
+                    <div class="err-message"></div>
+                </form>
+            </div>
+
+            <div class="horses-infos" style="margin-top: 100px;">
+                <p class="total-hay-qty" style="display: inline-block;"><b>- Your Total Hay Is: </b> {hay from firestore} Kg</p>
+                <p class="total-oats-qty" style="display: inline-block; margin: 0 200px;"><b>- Your Total Oats Is: </b> {oats from firestore} Kg</p>
+                <p class="total-water-qty" style="display: inline-block;"><b>- Your Total Water Is: </b> {water from firestore} L</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="pd-y">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-item">
+                    <h2 class="footer-title">EquiTrain</h2>
+                    <ul>
+                        <li><a href="#"><i class='bx bxl-facebook-circle' style="color: #212121; transition: color 0.5s;" onmouseover="this.style.color='#1877F2'" onmouseout="this.style.color='#212121'"></i></a></li>
+                        <li><a href="#"><i class='bx bxl-twitter' style="color: #212121; transition: color 0.5s;" onmouseover="this.style.color='#1DA1F2'" onmouseout="this.style.color='#212121'"></i></a></li>
+                        <li><a href="#"><i class='bx bxl-youtube' style="color: #212121; transition: color 0.5s;" onmouseover="this.style.color=' #FF0000'" onmouseout="this.style.color='#212121'"></i></a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-item">
+                    <h6 class="footer-item-title">Services</h6>
+                    <p class="footer-item-links"><a href="#">How it works</a></p>
+                    <p class="footer-item-links"><a href="#">Web Development</a></p>
+                    <p class="footer-item-links"><a href="#">Work & Portfolio</a></p>
+                    <p class="footer-item-links"><a href="#">SEO Backlinks</a></p>
+                    <p class="footer-item-links"><a href="#">SMM production</a></p>
+                    <p class="footer-item-links"><a href="#">Collaboration</a></p>
+                </div>
+
+                <div class="footer-item">
+                    <h6 class="footer-item-title">About</h6>
+                    <p class="footer-item-links"><a href="#">Our mission</a></p>
+                    <p class="footer-item-links"><a href="#">Our story</a></p>
+                    <p class="footer-item-links"><a href="#">Team Members</a></p>
+                    <p class="footer-item-links"><a href="#">Plan & Pricing</a></p>
+                    <p class="footer-item-links"><a href="#">Career</a></p>
+                    <p class="footer-item-links"><a href="#">Live Chat</a></p>
+                </div>
+
+                <div class="footer-item">
+                    <h6 class="footer-item-title">We accept all major credit cards for fast and easy payment.</h6>
+                    <p class="footer-item-links">hello@EquiTrain-team.com</p>
+                    <p class="footer-item-links" style="margin: 10px 0;">25 Rue boni ,Annaba.</p>
+                    <p class="footer-item-links">+213-795-24-13-82.</p>
+                    <img src="../../public/cards.webp" alt="cards" style="display: block; margin-top: 10px;">
+                </div>
+            </div>
+        </div>
+    </footer> <!-- Footer -->
+
+    <a href="reservation.html" class="reserve-science-icon"><i class="bx bx-plus"></i></a>
+    <script src="../../java script/admin/admin.js"></script>
+    <script type="module" src="../../java script/admin/horses.js"></script>
+</body>
+</html>
+
